@@ -5,64 +5,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AppFastTrack — App Store Review in 48 Hours</title>
   <style>
+    *, *::before, *::after { box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 680px; margin: 0 auto; padding: 40px 20px; line-height: 1.6; color: #1a1a1a; }
     h1 { font-size: 2.2em; margin-bottom: 8px; }
     .hero { background: #f5f0ff; border-radius: 16px; padding: 32px; margin-bottom: 40px; border: 1px solid #e0d4f5; }
-    .hero p { font-size: 1.15em; color: #555; margin: 0; }
+    .hero p { font-size: 1.15em; color: #555; margin: 0 0 16px; }
     h2 { font-size: 1.4em; margin-top: 36px; }
     .steps { list-style: none; padding: 0; }
     .steps li { padding: 16px; margin-bottom: 12px; background: #fafafa; border-radius: 8px; }
     .steps strong { color: #6b3fa0; }
-    .cta { display: inline-block; background: #6b3fa0; color: white; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1em; margin: 24px 0; }
+    .cta { display: inline-block; background: #6b3fa0; color: white; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1em; margin: 8px 0; }
     .cta:hover { background: #5a2f8a; }
     .pricing { background: #f5f0ff; border-radius: 12px; padding: 24px; margin: 24px 0; }
     .price { font-size: 2em; font-weight: bold; color: #6b3fa0; }
-    .guarantee { background: #e8f5e9; border-radius: 8px; padding: 16px; margin: 24px 0; color: #2e7d32; }
+    .pricing-item { margin-bottom: 24px; }
+    .pricing-item:last-child { margin-bottom: 0; }
+    .pricing-divider { border: none; border-top: 1px solid #d4c1e8; margin: 24px 0; }
+    .guarantee { background: #e8f5e9; border-radius: 8px; padding: 16px; margin: 20px 0; color: #2e7d32; }
+    .form-section { background: #fafafa; border-radius: 12px; padding: 32px; margin: 32px 0; border: 1px solid #e8e0f0; }
+    .form-section h2 { margin-top: 0; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-weight: 600; margin-bottom: 6px; color: #333; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 10px 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 1em; font-family: inherit; }
+    .form-group textarea { resize: vertical; min-height: 80px; }
+    .form-group select { background: white; }
+    .submit-btn { display: inline-block; background: #6b3fa0; color: white; padding: 16px 40px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1em; border: none; cursor: pointer; width: 100%; }
+    .submit-btn:hover { background: #5a2f8a; }
     .faq q { display: block; font-weight: bold; margin: 20px 0 8px; }
     .faq q::before { content: "Q: "; }
     .faq p { margin: 0 0 16px; color: #555; }
     footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #eee; color: #888; font-size: 0.9em; }
+    .or-divider { text-align: center; color: #888; margin: 20px 0; font-size: 0.95em; }
   </style>
 </head>
 <body>
+
 <div class="hero">
   <h1>Your App Store Review Is Taking Too Long</h1>
   <p>We get your iOS app update reviewed and approved in <strong>48 hours</strong> — or you don't pay. No more waiting 10 days while your users suffer.</p>
-  <a href="https://buy.stripe.com/test_aFacN4gyMfg63ho93U4ow02" class="cta">Submit Your App Now →</a>
   <div class="guarantee">✅ 48-hour guarantee — or full refund, no questions asked</div>
 </div>
+
 <h2>How It Works</h2>
 <ol class="steps">
-  <li><strong>Submit your app</strong> — Share your App Store URL and current review status. Takes 2 minutes.</li>
-  <li><strong>We audit & prepare</strong> — We review your app's status, any rejection notes, and Apple's current guidelines to build the optimal expedited request for your specific case.</li>
-  <li><strong>We email you the perfected request</strong> — You paste it into your Apple Developer account and submit. Takes 2 minutes. We stay on standby until you get your decision.</li>
+  <li><strong>Pay for your service</strong> — Choose Standard ($299) or Rush ($499) below.</li>
+  <li><strong>Fill out the intake form</strong> — After payment, complete the form with your app details.</li>
+  <li><strong>We build your expedited request</strong> — We review your case and email you a perfectly formatted expedited review request.</li>
+  <li><strong>You submit to Apple</strong> — Paste the request into your Apple Developer account. Done in 2 minutes.</li>
 </ol>
+
 <h2>Pricing</h2>
 <div class="pricing">
-  <p><strong>Standard Expedite</strong></p>
-  <p class="price">$299</p>
-  <p>48-hour review decision (or full refund) · Full audit · Optimized, ready-to-paste request · Email delivery</p>
-  <a href="https://buy.stripe.com/test_aFacN4gyMfg63ho93U4ow02" class="cta">Get Started →</a>
-  <hr style="border: none; border-top: 1px solid #d4c1e8; margin: 20px 0;">
-  <p><strong>Rush Expedite</strong></p>
-  <p class="price">$499</p>
-  <p>24-hour review decision · Priority handling · Everything in Standard</p>
-  <a href="https://buy.stripe.com/test_aFabJ03M09VMcRY0xo4ow03" class="cta">Rush It →</a>
+  <div class="pricing-item">
+    <p><strong>Standard Expedite</strong></p>
+    <p class="price">$299</p>
+    <p>48-hour review decision · Full audit · Optimized, ready-to-paste request · Email delivery</p>
+    <a href="https://buy.stripe.com/eVq3cv8xnexQ0c7c7t3Je00" class="cta">Pay Standard →</a>
+  </div>
+  <hr class="pricing-divider">
+  <div class="pricing-item">
+    <p><strong>Rush Expedite</strong></p>
+    <p class="price">$499</p>
+    <p>24-hour review decision · Priority handling · Everything in Standard</p>
+    <a href="https://buy.stripe.com/8x29ATeVL9dw7Ez5J53Je01" class="cta">Pay Rush →</a>
+  </div>
 </div>
+
+<div class="or-divider">— After payment, fill out the form below —</div>
+
+<div class="form-section">
+  <h2>Intake Form</h2>
+  <form action="https://formspree.io/f/xjgjnedz" method="POST">
+    <div class="form-group">
+      <label for="email">Contact Email *</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com">
+    </div>
+    <div class="form-group">
+      <label for="app_url">App Store URL *</label>
+      <input type="url" id="app_url" name="app_url" required placeholder="https://apps.apple.com/...">
+    </div>
+    <div class="form-group">
+      <label for="status">Current Status *</label>
+      <select id="status" name="status" required>
+        <option value="">Select status...</option>
+        <option value="Under Review">Under Review</option>
+        <option value="Rejected">Rejected</option>
+        <option value="Pending Changes">Pending Changes</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="rejection_reason">Rejection Reason (if any)</label>
+      <textarea id="rejection_reason" name="rejection_reason" placeholder="What reason did Apple give for rejection?"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="description">What do you need expedited? *</label>
+      <textarea id="description" name="description" required placeholder="Briefly describe what you're trying to get approved..."></textarea>
+    </div>
+    <div class="form-group">
+      <label for="service_type">Service Type *</label>
+      <select id="service_type" name="service_type" required>
+        <option value="">Select service...</option>
+        <option value="Standard $299">Standard — $299 (48-hour guarantee)</option>
+        <option value="Rush $499">Rush — $499 (24-hour guarantee)</option>
+      </select>
+    </div>
+    <button type="submit" class="submit-btn">Submit Intake Form</button>
+  </form>
+</div>
+
 <h2>FAQ</h2>
 <div class="faq">
   <q>Does this really work?</q>
-  <p>Yes. Apple's expedited review process exists for legitimate cases. Most developers fail because they don't format the request correctly or don't follow up. We know the process, the right language, and the exact channels.</p>
+  <p>Yes. Apple's expedited review process exists for legitimate cases. Most developers fail because they don't format the request correctly. We prepare a polished, perfectly-formatted expedited request and deliver it to you ready to paste.</p>
+
   <q>What if Apple doesn't approve the expedited request?</q>
   <p>You don't pay. That's our guarantee.</p>
+
   <q>What's included in the audit?</q>
-  <p>We review your app's submission metadata, any rejection notes you've received, and Apple's current review guidelines to ensure your request hits the right criteria.</p>
+  <p>We review your app's submission metadata, any rejection notes, and Apple's current review guidelines to ensure your request hits the right criteria.</p>
+
   <q>How do you get apps reviewed faster?</q>
-  <p>Apple offers an expedited review path for legitimate cases. Most developers fail because they don't format the request correctly. We prepare a polished, perfectly-formatted expedited request and deliver it to you ready to paste — dramatically increasing your odds over a DIY submission.</p>
+  <p>Apple offers an expedited review path for legitimate cases. We prepare a polished, perfectly-formatted expedited request and deliver it to you ready to paste — dramatically increasing your odds over a DIY submission.</p>
 </div>
+
 <footer>
   <p>AppFastTrack — Built by developers, for developers.<br>
   Questions? Email hello@appfasttrack.com</p>
 </footer>
+
 </body>
 </html>
